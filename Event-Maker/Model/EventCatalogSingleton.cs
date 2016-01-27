@@ -6,7 +6,7 @@
 
         private EventCatalogSingleton()
         {
-            
+            Event myEvent = new Event();
         }
 
         public static EventCatalogSingleton GetInstance()
