@@ -10,14 +10,19 @@ namespace Event_Maker.Model
         string Place { get; set; }
         DateTime DateTime { get; set; }
 
-        public Event()
+        public Event(int id, string name, string description, string place, DateTime dateTime)
         {
-            
+            Id = id;
+            Name = name;
+            Description = description;
+            Place = place;
+            DateTime = dateTime;
         }
 
         public override string ToString()
         {
-            return base.ToString();
+            return string.Format("Id: {0} Name: {1} Description: {2} Place: {3} Date: {4}", Id, Name,
+                Description, Place, DateTime);
         }
     }
 }

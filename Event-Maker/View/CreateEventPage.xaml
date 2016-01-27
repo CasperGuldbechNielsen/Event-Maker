@@ -8,6 +8,48 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <RelativePanel>
+            <TextBlock x:Name="TitleText"
+                       TextWrapping="Wrap" 
+                       Text="Add event" 
+                       FontSize="42"
+                       RelativePanel.AlignTopWithPanel="True"
+                       RelativePanel.AlignHorizontalCenterWithPanel="True"/>
+            <TextBox x:Name="Id"
+                     RelativePanel.Below="TitleText"
+                     RelativePanel.AlignHorizontalCenterWithPanel="True"
+                     Width="300"
+                     Header="Id:"/>
+            <TextBox x:Name="Name"
+                     RelativePanel.Below="Id"
+                     RelativePanel.AlignHorizontalCenterWithPanel="True"
+                     Width="300"
+                     Header="Name:"/>
+            <TextBox x:Name="Description"
+                     RelativePanel.Below="Name"
+                     RelativePanel.AlignHorizontalCenterWithPanel="True"
+                     Width="300"
+                     Header="Description:"/>
+            <TextBox x:Name="Place"
+                     RelativePanel.Below="Description"
+                     RelativePanel.AlignHorizontalCenterWithPanel="True"
+                     Width="300"
+                     Header="Place:"/>
+            <DatePicker x:Name="Date"
+                        RelativePanel.Below="Place"
+                        RelativePanel.AlignHorizontalCenterWithPanel="True"
+                        Header="Date:"/>
+            <TimePicker x:Name="Time"
+                        RelativePanel.Below="Date"
+                        RelativePanel.AlignHorizontalCenterWithPanel="True"
+                        Header="Time:"
+                        Width="300"/>
+            <Button x:Name="AddEvent"
+                    RelativePanel.Below="Time"
+                    RelativePanel.AlignRightWith="Time"
+                    Width="50"
+                    Content="Add"
+                    Margin="0,20,0,0"/>
+        </RelativePanel>
     </Grid>
 </Page>

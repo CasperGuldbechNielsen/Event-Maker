@@ -8,6 +8,19 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <RelativePanel>
+            <TextBlock x:Name="TitleText" 
+                       TextWrapping="Wrap" 
+                       Text="Event Maker"
+                       FontSize="42"
+                       RelativePanel.AlignTopWithPanel="True"
+                       RelativePanel.AlignHorizontalCenterWithPanel="True" />
+            <ListView x:Name="MyListView" 
+                      Height="100" 
+                      Margin="0,100,0,0" 
+                      Width="Auto"
+                      RelativePanel.Below="TitleText"
+                      RelativePanel.AlignHorizontalCenterWithPanel="True"/>
+        </RelativePanel>
     </Grid>
 </Page>
