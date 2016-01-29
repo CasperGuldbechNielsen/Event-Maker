@@ -1,26 +1,46 @@
 ﻿<Page
-    x:Class="Event_Maker.View.EventPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Event_Maker.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ViewModel="using:Event_Maker.ViewModel"
+    x:Class="Event_Maker.View.EventPage"
     mc:Ignorable="d">
+
+    <Page.DataContext>
+        <ViewModel:EventViewModel/>
+    </Page.DataContext>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <RelativePanel>
             <TextBlock x:Name="TitleText" 
-                       TextWrapping="Wrap" 
-                       Text="Event Maker"
-                       FontSize="42"
-                       RelativePanel.AlignTopWithPanel="True"
-                       RelativePanel.AlignHorizontalCenterWithPanel="True" />
+				TextWrapping="Wrap" 
+				Text="Event Maker"
+				FontSize="42"
+				RelativePanel.AlignTopWithPanel="True"
+				RelativePanel.AlignHorizontalCenterWithPanel="True" />
             <ListView x:Name="MyListView" 
-                      Height="100" 
-                      Margin="0,100,0,0" 
-                      Width="Auto"
-                      RelativePanel.Below="TitleText"
-                      RelativePanel.AlignHorizontalCenterWithPanel="True"/>
+				Height="100" 
+				Margin="0,100,0,0" 
+				Width="Auto"
+				RelativePanel.Below="TitleText"
+				RelativePanel.AlignHorizontalCenterWithPanel="True" ItemsSource="{Binding MyCatalogSingleton.Events}"/>
+            <Button x:Name="CreateEvent"
+				RelativePanel.AlignBottomWithPanel="True"
+				RelativePanel.LeftOf="EditEvent"
+				Content="Create Event"
+				Margin="10,0,0,10"/>
+            <Button x:Name="EditEvent"
+				RelativePanel.AlignBottomWithPanel="True"
+				RelativePanel.AlignHorizontalCenterWithPanel="True"
+				Content="Edit Event"
+				Margin="10,0,0,10"/>
+            <Button x:Name="DeleteEvent"
+				RelativePanel.AlignBottomWithPanel="True"
+				RelativePanel.RightOf="EditEvent"
+				Content="Delete Event"
+				Margin="10,0,0,10"/>
         </RelativePanel>
     </Grid>
 </Page>
