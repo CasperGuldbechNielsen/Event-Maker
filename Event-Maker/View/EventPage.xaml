@@ -5,6 +5,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ViewModel="using:Event_Maker.ViewModel"
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" 
+    xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
     x:Class="Event_Maker.View.EventPage"
     mc:Ignorable="d">
 
@@ -21,26 +23,38 @@
 				RelativePanel.AlignTopWithPanel="True"
 				RelativePanel.AlignHorizontalCenterWithPanel="True" />
             <ListView x:Name="MyListView" 
-				Height="100" 
+				Height="auto" 
 				Margin="0,100,0,0" 
 				Width="Auto"
 				RelativePanel.Below="TitleText"
 				RelativePanel.AlignHorizontalCenterWithPanel="True" ItemsSource="{Binding MyCatalogSingleton.Events}"/>
-            <Button x:Name="CreateEvent"
-				RelativePanel.AlignBottomWithPanel="True"
-				RelativePanel.LeftOf="EditEvent"
-				Content="Create Event"
-				Margin="10,0,0,10"/>
-            <Button x:Name="EditEvent"
-				RelativePanel.AlignBottomWithPanel="True"
+            <AppBarButton x:Name="EditEvent"
 				RelativePanel.AlignHorizontalCenterWithPanel="True"
-				Content="Edit Event"
-				Margin="10,0,0,10"/>
-            <Button x:Name="DeleteEvent"
 				RelativePanel.AlignBottomWithPanel="True"
+				Height="76"
+				Width="81"
+				Icon="Play"
+				Label="Edit Event"/>
+            <AppBarButton x:Name="CreateEvent" 
+				RelativePanel.LeftOf="EditEvent"
+				RelativePanel.AlignBottomWithPanel="True"
+				Height="76" 
+				Icon="Accept" 
+				Label="Create Event" 
+				Width="81">
+                <Interactivity:Interaction.Behaviors>
+                    <Core:EventTriggerBehavior EventName="Click">
+                        <Core:NavigateToPageAction TargetPage="Event_Maker.View.CreateEventPage"/>
+                    </Core:EventTriggerBehavior>
+                </Interactivity:Interaction.Behaviors>
+            </AppBarButton>
+            <AppBarButton x:Name="DeleteEvent" 
 				RelativePanel.RightOf="EditEvent"
-				Content="Delete Event"
-				Margin="10,0,0,10"/>
+				RelativePanel.AlignBottomWithPanel="True"
+				Height="76" 
+				Icon="Cancel" 
+				Label="Delete Event" 
+				Width="81"/>
         </RelativePanel>
     </Grid>
 </Page>

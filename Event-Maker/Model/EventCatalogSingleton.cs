@@ -32,9 +32,9 @@ namespace Event_Maker.Model
             Events.Add(new Event(1, "Shrink", "Need to see the shrink", "Køge", new DateTime(2016, 01, 29)));
         }
 
-        public void AddEvent()
+        public void AddEvent(int id, string name, string description, string place, DateTime dateTime)
         {
-            
+            Events.Add(new Event(id, name, description, place, dateTime));
         }
 
         public void DeleteEvent()
