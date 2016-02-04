@@ -27,7 +27,16 @@
 				Margin="0,100,0,0" 
 				Width="Auto"
 				RelativePanel.Below="TitleText"
-				RelativePanel.AlignHorizontalCenterWithPanel="True" ItemsSource="{Binding MyCatalogSingleton.Events}"/>
+				RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                ItemsSource="{Binding MyCatalogSingleton.Events}"
+                SelectedItem="{Binding SelectedEvent, Mode=TwoWay}">
+                <Interactivity:Interaction.Behaviors>
+                    <Core:EventTriggerBehavior EventName="SelectionChanged">
+                        <Core:InvokeCommandAction Command="{Binding SelectEventCommand}" 
+                                                  CommandParameter="{Binding SelectedItem, ElementName=listView}"/>
+                    </Core:EventTriggerBehavior>
+                </Interactivity:Interaction.Behaviors>
+            </ListView>
             <AppBarButton x:Name="EditEvent"
 				RelativePanel.AlignHorizontalCenterWithPanel="True"
 				RelativePanel.AlignBottomWithPanel="True"
@@ -49,12 +58,13 @@
                 </Interactivity:Interaction.Behaviors>
             </AppBarButton>
             <AppBarButton x:Name="DeleteEvent" 
-				RelativePanel.RightOf="EditEvent"
-				RelativePanel.AlignBottomWithPanel="True"
-				Height="76" 
-				Icon="Cancel" 
-				Label="Delete Event" 
-				Width="81"/>
+				          RelativePanel.RightOf="EditEvent"
+				          RelativePanel.AlignBottomWithPanel="True"
+				          Height="76" 
+				          Icon="Cancel" 
+				          Label="Delete Event" 
+				          Width="81" 
+                          Command="{Binding DeleteEventCommand}"/>
         </RelativePanel>
     </Grid>
 </Page>

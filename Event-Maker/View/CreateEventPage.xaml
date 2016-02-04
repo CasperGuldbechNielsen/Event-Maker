@@ -25,7 +25,8 @@
 				RelativePanel.Below="TitleText"
 				RelativePanel.AlignHorizontalCenterWithPanel="True"
 				Width="300"
-				Header="Id:" Text="{Binding Id, Mode=TwoWay}"/>
+				Header="Id:" 
+                Text="{Binding Id, Mode=TwoWay}"/>
             <TextBox x:Name="Name"
 				RelativePanel.Below="Id"
 				RelativePanel.AlignHorizontalCenterWithPanel="True"

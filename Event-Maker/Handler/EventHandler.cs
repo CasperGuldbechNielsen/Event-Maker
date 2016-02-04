@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Windows.Input;
 using Event_Maker.Converter;
+using Event_Maker.Model;
 using Event_Maker.ViewModel;
 
 namespace Event_Maker.Handler
@@ -21,6 +23,11 @@ namespace Event_Maker.Handler
             _dateTime = DateTimeConverter.DateTimeOffsetAndTimeSetToDateTime(EventViewModel.Date, EventViewModel.Time);
 
             EventViewModel.MyCatalogSingleton.AddEvent(EventViewModel.Id, EventViewModel.Name, EventViewModel.Description, EventViewModel.Place, _dateTime);
-        } 
+        }
+
+        public void DeleteEvent()
+        {
+            EventViewModel.MyCatalogSingleton.DeleteEvent(EventViewModel.SelectedEvent);
+        }
     }
 }

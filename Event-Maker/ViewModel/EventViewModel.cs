@@ -21,7 +21,15 @@ namespace Event_Maker.ViewModel
 
         private ICommand _createEventCommand;
 
+        private ICommand _selectEventCommand;
+
+        private ICommand _deleteEventCommand;
+
+
         public Handler.EventHandler EventHandler { get; set; }
+
+        public static Event SelectedEvent { get; set; }
+
 
         public EventViewModel()
         {
@@ -33,6 +41,9 @@ namespace Event_Maker.ViewModel
             EventHandler = new Handler.EventHandler(this);
 
             _createEventCommand = new RelayCommand(EventHandler.CreateEvent);
+
+            _deleteEventCommand = new RelayCommand(EventHandler.DeleteEvent);
+
 
         }
 
@@ -86,12 +97,24 @@ namespace Event_Maker.ViewModel
 
         public ICommand CreateEventCommand
         {
-            get {
-                    if (_createEventCommand == null)
-                    {
-                        _createEventCommand = new RelayCommand(EventHandler.CreateEvent);
-                    } return _createEventCommand;
-                }
+            get
+            {
+                if (_createEventCommand == null)
+                {
+                    _createEventCommand = new RelayCommand(EventHandler.CreateEvent);
+                } return _createEventCommand;
+            }
+        }
+        public ICommand SelectEventCommand
+        {
+            get { return _selectEventCommand; }
+            set { _selectEventCommand = value; }
+        }
+
+         public ICommand DeleteEventCommand
+        {
+            get { return _deleteEventCommand; }
+            set { _deleteEventCommand = value; }
         }
 
 

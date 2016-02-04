@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq.Expressions;
+using Event_Maker.Persistency;
 
 namespace Event_Maker.Model
 {
@@ -27,19 +29,29 @@ namespace Event_Maker.Model
             }
         }
 
-        public void LoadEventAsync()
+        public async void LoadEventAsync()
         {
-            Events.Add(new Event(1, "Shrink", "Need to see the shrink", "Køge", new DateTime(2016, 01, 29)));
+            var loadedEvents = await PersistencyService.LoadEventsFromJsonAsync();
+
+            if (loadedEvents != null)
+            {
+                foreach (var item in loadedEvents)
+                {
+                    Events.Add(item);
+                }
+            }
         }
 
         public void AddEvent(int id, string name, string description, string place, DateTime dateTime)
         {
             Events.Add(new Event(id, name, description, place, dateTime));
+            PersistencyService.SaveEventsAsJsonAsync(Events);
         }
 
-        public void DeleteEvent()
+        public void DeleteEvent(Event myEvent)
         {
-            
+            Events.Remove(myEvent);
+            PersistencyService.SaveEventsAsJsonAsync(Events);
         }
 
         public void EditEvent()
