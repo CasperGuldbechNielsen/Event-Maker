@@ -1,0 +1,1168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="3f7e86f2-4b22-4195-93b9-70b8410351fe"
+  name="ClassDiagram" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="e8774170-def1-430a-82b6-5e35a28f122a"
+        name="Event"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="71cb887c-d537-49cd-a5d8-9ce4f57816e4"
+            name="Description"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8be7931a-6e92-4fb3-906e-488d6a39d4a4"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8e0fb845-b458-4242-9150-50b83092c1ef"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="05a578a6-e2f2-45b3-a1ba-34bf52297aa0"
+            name="DateTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3c36a609-f72a-42b5-b532-c34832973c72"
+            name="Place"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c1566484-a6ae-409c-ac13-4ecaa82ccd05"
+            name="ToString"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="44b689a5-c9d4-48f8-8cca-727c3bb14de3"
+            name="Event"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="56f2b705-b17e-4824-ac67-11d4ca023ab9"
+                  name="int id"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a932b696-77de-490a-b10b-e14349ddd871"
+                  name="string name"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d9388283-01c3-48d4-a577-977fae80c72e"
+                  name="string description"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3b32e69f-9e00-4c8b-a774-2f3a0b75f942"
+                  name="string place"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="78f441f7-dcad-4c94-abea-a660d95faa3d"
+                  name="DateTime dateTime"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0d39de1c-4093-4a2e-809f-34d7ef92a9d0"
+        name="EventPage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ceb3f268-daee-4be7-90e0-8cc9c2eeefc6"
+        name="RelayArgCommand&lt;T&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="00897dfd-b8ce-4e2c-b609-fee7925890ca"
+            name="Action&lt;T&gt; _execute"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a6b10efb-16b5-4d76-9889-241a6c2b702d"
+            name="Func&lt;bool&gt; _canExecute"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e0681b63-cb3c-446b-8e62-8e9e41394bb1"
+            name="EventHandler CanExecuteChanged"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="3e4cdf0a-2838-4021-8050-29c20c497982"
+            name="RaiseCanExecuteChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d20c2080-fd16-40be-86f2-7afa51d46144"
+            name="Execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b1b6d1c0-635c-428e-858b-f441c471bd43"
+                  name="object parameter"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b219d8a8-8dd6-400b-a6dc-ce34b6bf3771"
+            name="CanExecute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ea839810-7287-4127-b066-ea0f73779ab9"
+                  name="object parameter"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cec3c1f5-6bb6-4b4f-9961-8a182dab88d9"
+            name="RelayArgCommand(Action&lt;T&gt; execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5486b5f4-7eae-49e7-bbbe-f80081d359b0"
+            name="RelayArgCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="27d9b708-5a65-4684-912e-7e703217445f"
+                  name="Action&lt;T&gt; execute"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cc127ca8-0467-49a1-be7a-5a3831699bbe"
+                  name="Func&lt;bool&gt; canExecute"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6d86da6c-18ad-44a6-996b-c776919989ea"
+        name="RelayCommand"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="d15ef675-fca0-4046-b08c-c77db277ec22"
+            name="Action _execute"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8be85aeb-ec46-4dd9-8d20-df46d4c4739f"
+            name="Func&lt;bool&gt; _canExecute"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="76d3bb7f-e42e-4348-94cc-9038c457aabb"
+            name="EventHandler CanExecuteChanged"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="4948959b-59a4-4bb6-b4dc-cf22b67a1259"
+            name="RaiseCanExecuteChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="84793713-f416-443f-9170-b189deefadff"
+            name="Execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3ca69fd2-8778-4635-a514-c60b319d1c75"
+                  name="object parameter"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1c714ed1-9fb2-41d2-b856-4bd3254f110c"
+            name="CanExecute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b8a93110-12bf-4b31-8253-04d23aaaab85"
+                  name="object parameter"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="de290536-3f47-4c10-8da7-5e8a20e94ad0"
+            name="RelayCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b5830574-db05-41fd-86ef-7f69c81e5ac3"
+                  name="Action execute"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5276d68f-f6f3-4e1a-ac96-93e153144faf"
+            name="RelayCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="49a50a8b-0ca0-40de-82a0-2c7ee94c5409"
+                  name="Action execute"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="782028e0-3ce5-4156-99de-7d241bc468a0"
+                  name="Func&lt;bool&gt; canExecute"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5d819475-b70b-4238-9e73-4bc037604f42"
+        name="DateTimeConverter"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="a0ca5c2e-d060-44e5-b89a-501ec3cc2d84"
+            name="DateTimeOffsetAndTimeSetToDateTime"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0f3e2772-a4ad-4f4a-816d-c60f6371da50"
+                  name="DateTimeOffset date"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="05fe3494-1414-4cbb-873d-62cbf22f75e8"
+                  name="TimeSpan time"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ec3c36d3-4786-4789-8e0d-069bd81f9fa1"
+        name="EventHandler"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="6c3b4609-2ef7-4315-9533-a073176b1e8a">
+            <classMoniker
+              Id="5d819475-b70b-4238-9e73-4bc037604f42"
+              LastKnownName="DateTimeConverter"
+              LastKnownLocation="ClassDiagram.uml" />
+          </dependency>
+          <dependency
+            Id="92c5767e-50af-4928-bf14-a7c2c232e667">
+            <classMoniker
+              Id="abd6c22b-7590-4bb7-a991-799d062c2ce9"
+              LastKnownName="EventViewModel"
+              LastKnownLocation="ClassDiagram.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="23b2e6c0-c2ca-459d-8e49-5580c4ff9627"
+            name="DateTime _dateTime"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a0161b19-a292-4948-a5b2-9447acdb9179"
+            name="EventViewModewl EventViewModel"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2ccf14c7-86ba-4204-a506-44dd44a62662"
+            name="CreateEvent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5eb3b10b-e80e-4587-91fd-8d45a7542713"
+            name="DeleteEvent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a86e43ec-65f0-4746-8816-1ed66f010986"
+            name="EventHandler"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="777e7cde-3ff9-4e1d-9c3c-d1d9f22b2b1f"
+                  name="EventViewModel eventViewModel"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1b402923-0f6a-437b-bc91-345dc5d5a0d7"
+        name="EventCatalogSingleton"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="848efbfa-a221-48d8-b0d7-d72c21e2f07b">
+            <classMoniker
+              Id="6d86da6c-18ad-44a6-996b-c776919989ea"
+              LastKnownName="RelayCommand"
+              LastKnownLocation="ClassDiagram.uml" />
+          </dependency>
+          <dependency
+            Id="673831dc-f12d-4c09-bcaa-a85ea3169ccd">
+            <classMoniker
+              Id="ceb3f268-daee-4be7-90e0-8cc9c2eeefc6"
+              LastKnownName="RelayArgCommand&lt;T&gt;"
+              LastKnownLocation="ClassDiagram.uml" />
+          </dependency>
+          <dependency
+            Id="3c56bb43-5281-4669-8f73-85f8741fa5a4">
+            <classMoniker
+              Id="e8774170-def1-430a-82b6-5e35a28f122a"
+              LastKnownName="Event"
+              LastKnownLocation="ClassDiagram.uml" />
+          </dependency>
+          <dependency
+            Id="07b5b2d3-ce09-4606-a478-bedefd3c4908">
+            <classMoniker
+              Id="a7181942-f85d-4526-8759-f7aa2127cb5a"
+              LastKnownName="PersistencyService"
+              LastKnownLocation="ClassDiagram.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="576defda-9800-4c26-a946-67254270fca5"
+            name="EventCatalogSingleton _instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c3662e67-47e9-47e0-9015-f1f1cca4b5cd"
+            name="ObservableCollection&lt;Event&gt; events"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fdb064eb-4b3a-4a15-a1d5-231f989ecfc9"
+            name="EventCatalogSingleton"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="17307df5-4bd1-4a51-a050-5d6777bc6033"
+            name="EventCatalogSingleton GetInstance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="41252c4d-1f41-473a-a32a-f48cf00a33ce"
+            name="LoadEventAsync"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2b536b2f-fab8-4ca4-9bf5-38ed8319ce73"
+            name="AddEvent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8ff50fba-1ed0-4671-b1e4-a13ca02f1a22"
+                  name="int id"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="87499d2d-af07-40ed-a7cf-c2e9737e4738"
+                  name="string name"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bb5c32da-bc17-4e47-af05-c5b5e0cbaa1e"
+                  name="string description"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1d8532b0-c1c9-4a6e-adcd-596177a22f67"
+                  name="string place"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f6fc90d4-b916-4ef8-8cd5-db6b4a659170"
+                  name="DateTime dateTime"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b759fb6c-83e2-4873-a604-142ef4bb271b"
+            name="DeleteEvent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6bc02e52-d42f-44d6-8a6e-9607502694cf"
+                  name="Event myEvent"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="37e9c78e-6883-4b6a-90ae-f39a640505fd"
+            name="EditEvent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a7181942-f85d-4526-8759-f7aa2127cb5a"
+        name="PersistencyService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="6c7881a6-177b-4cdd-87a5-f2afcdb61658">
+            <classMoniker
+              Id="d1f09fc2-d852-41dc-8b0a-3f0b317bf8d5"
+              LastKnownName="MessageDialogHelper"
+              LastKnownLocation="ClassDiagram.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="f86e12dc-f374-41b4-8ebd-d381e0feafcb"
+            name="string jsonFileName"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="bc10cb58-57a1-42d2-8754-8ea69774068f"
+            name="SaveEventsAsJsonAsync"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0b9750af-6cf2-4357-a998-f971b2d534c9"
+                  name="ObservableCollection&lt;Event&gt; events"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="16371cbf-6f51-4780-9c3b-ac60021ffb87"
+            name="Task&lt;List&lt;Event&gt;&gt; LoadEventsFromJsonAsync"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d0b025e2-823a-421a-b403-487f7b8b802b"
+            name="SerializeEventsFileAsync"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="917b1385-f931-434e-90f7-61105cd58cdc"
+                  name="string eventsString"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4f1dd988-b96e-48ed-917a-0a48521da626"
+                  name="string fileName"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b5519436-d916-44eb-9680-9d49e11c96c2"
+            name="Task&lt;string&gt; DeserializeEventsFileAsync"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f6a060bb-cfb9-4ae8-b79c-af07344fba81"
+                  name="string fileName"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d1f09fc2-d852-41dc-8b0a-3f0b317bf8d5"
+        name="MessageDialogHelper"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="5115a0de-11a6-4f1b-a719-d20f105dbf4b"
+            name="Show"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="72c01b9e-4c6a-4b1e-bc93-eea59a58b28e"
+                  name="string content"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="98ab6d29-990d-4975-8bbb-4b388e099d15"
+                  name="string title"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="abd6c22b-7590-4bb7-a991-799d062c2ce9"
+        name="EventViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="8034939e-9cbc-42f7-8829-799785c3eb57">
+            <classMoniker
+              Id="ec3c36d3-4786-4789-8e0d-069bd81f9fa1"
+              LastKnownName="EventHandler"
+              LastKnownLocation="ClassDiagram.uml" />
+          </dependency>
+          <dependency
+            Id="12292467-c94e-4e56-8638-f0aeb36facbc">
+            <classMoniker
+              Id="1b402923-0f6a-437b-bc91-345dc5d5a0d7"
+              LastKnownName="EventCatalogSingleton"
+              LastKnownLocation="ClassDiagram.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="e2f2ab7e-2f87-470a-a9df-a13f9034e7d2"
+            name="int _id"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="deaa4750-455c-4b14-8ee0-026c56ace70b"
+            name="string _name"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="292f8db2-c388-44d0-8223-f16ec0348480"
+            name="string _description"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="66b3ebc3-61c6-4927-bec8-f257b2b7e14a"
+            name="string _place"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fd5f7174-a258-4e6a-9f4f-9e8b3ca7f72d"
+            name="DateTimeOffset _date"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a28aa818-a61c-496e-96c8-33cd9e0839ee"
+            name="TimeSpan _time"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="dbde39c7-5e9e-4be2-a0fc-46e31a2cfb1c"
+            name="EventCatalogSingleton MyCatalogSingleton"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4d983801-2bc6-4cc6-b563-36fb6fbbd154"
+            name="ICommand _createEventCommand"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="56a156da-6d25-4109-aee8-e32c3710b329"
+            name="ICommand _selectEventCommand"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="08ddb26f-5d5b-476b-b477-9dc8b271f50a"
+            name="ICommand _deleteEventCommand"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="74e860d7-87fb-4008-a019-2a53d6cc4995"
+            name="EventHandler EventHandler"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="16540c9d-888f-45c5-85f2-46d236358782"
+            name="Event SelectedEvent"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b3bf85fa-a465-4428-85fe-f4932303b515"
+            name="PropertyChangedEventHandler PropertyChanged"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a845e22f-a1fd-4fc8-a69c-bfe64cda6a41"
+            name="EventViewModel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="452a33b3-6ee7-4cae-b47b-818b0bfa645c"
+            name="Int Id"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="798b5dbc-d7f3-4513-8ea6-634741fad6f3"
+            name="string Name"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="cf26efba-cee1-4cfe-8a01-2b9131750064"
+            name="string Description"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="955977da-9dbb-4d09-8fde-e56ae77c0b34"
+            name="string Place"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a45951b6-63b8-4855-b493-eb8a85690efd"
+            name="DateTimeOffset Date"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5f3da2f8-8618-45f8-9c32-117f6d9bf778"
+            name="TimeSpan Time"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6dbcbc8d-f4f0-4808-be1b-a113e4ecf7b5"
+            name="ICommand CreateEventCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0f44c88d-895e-4a1a-8d31-8cf6daaedcd9"
+            name="ICommand SelectedEventCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="180ef007-f3c5-4e71-9035-88bac6a7d530"
+            name="ICommand DeleteEventCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="60b9b169-1b2f-40e8-a381-9f9205e4ea1c"
+            name="OnPropertyChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="53fc4904-6503-418d-ae52-545860053af9"
+                  name="[CallerMemberName] string propertyName"
+                  direction="In"
+                  isUnique="false">
+                  <defaultValue>
+                    <literalString
+                      Id="bcef1b9d-0919-47ee-9c3e-659afcb67329"
+                      name="DefaultValue"
+                      value="null" />
+                  </defaultValue>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="635b89d9-d955-497c-be87-9644b184fe28"
+        name="EventPage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6106cdd1-5a32-4fc8-9062-7cb7909a7232"
+        name="CreateEventPage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="3d556a23-4d20-4d63-a75d-b601d51edf49">
+            <classMoniker
+              Id="abd6c22b-7590-4bb7-a991-799d062c2ce9"
+              LastKnownName="EventViewModel"
+              LastKnownLocation="ClassDiagram.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
