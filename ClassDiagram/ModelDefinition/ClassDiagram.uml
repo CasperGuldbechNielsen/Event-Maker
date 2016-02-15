@@ -28,7 +28,7 @@
         <ownedAttributesInternal>
           <property
             Id="71cb887c-d537-49cd-a5d8-9ce4f57816e4"
-            name="Description"
+            name="string Description"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -39,7 +39,7 @@
             isComposite="false" />
           <property
             Id="8be7931a-6e92-4fb3-906e-488d6a39d4a4"
-            name="Name"
+            name="string Name"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -50,7 +50,7 @@
             isComposite="false" />
           <property
             Id="8e0fb845-b458-4242-9150-50b83092c1ef"
-            name="Id"
+            name="int Id"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -61,7 +61,7 @@
             isComposite="false" />
           <property
             Id="05a578a6-e2f2-45b3-a1ba-34bf52297aa0"
-            name="DateTime"
+            name="DateTime DateTime"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -72,7 +72,7 @@
             isComposite="false" />
           <property
             Id="3c36a609-f72a-42b5-b532-c34832973c72"
-            name="Place"
+            name="string Place"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"

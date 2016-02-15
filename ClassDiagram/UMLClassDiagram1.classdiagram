@@ -5,19 +5,19 @@
       <class Id="4552119f-a88e-4658-b4ad-764ab541dc57" name="Event" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e8774170-def1-430a-82b6-5e35a28f122a" />
         <ownedAttributesInternal>
-          <property Id="e2963c0a-d491-42ae-afdb-1138bac9ecd4" name="Description" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="e2963c0a-d491-42ae-afdb-1138bac9ecd4" name="string Description" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="71cb887c-d537-49cd-a5d8-9ce4f57816e4" />
           </property>
-          <property Id="7f8421e3-36d7-4ecb-85d4-091718055bf9" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="7f8421e3-36d7-4ecb-85d4-091718055bf9" name="string Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="8be7931a-6e92-4fb3-906e-488d6a39d4a4" />
           </property>
-          <property Id="bb1436af-edf0-4e44-bbe2-72022c05a28d" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="bb1436af-edf0-4e44-bbe2-72022c05a28d" name="int Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="8e0fb845-b458-4242-9150-50b83092c1ef" />
           </property>
-          <property Id="50d2b967-4b62-4bbd-ac8c-ae77dbd417bf" name="DateTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="50d2b967-4b62-4bbd-ac8c-ae77dbd417bf" name="DateTime DateTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="05a578a6-e2f2-45b3-a1ba-34bf52297aa0" />
           </property>
-          <property Id="01ce546b-d946-4c5e-8048-3cb01af9cc1e" name="Place" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="01ce546b-d946-4c5e-8048-3cb01af9cc1e" name="string Place" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="3c36a609-f72a-42b5-b532-c34832973c72" />
           </property>
         </ownedAttributesInternal>
